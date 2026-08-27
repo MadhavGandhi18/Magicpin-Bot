@@ -5,8 +5,8 @@ from pathlib import Path
 class Settings(BaseSettings):
     gemini_api_key: str
     openrouter_api_key: str
-    team_name: str
-    contact_email: str
+    team_name: str = "Prodigy"
+    contact_email: str = "madhavgandhi99@gmail.com"
     model_name: str = "gemini-flash-latest"
     
     model_config = SettingsConfigDict(
